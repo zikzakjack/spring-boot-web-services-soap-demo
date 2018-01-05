@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zzj:schema xmlns:zzj="http://www.w3.org/2001/XMLSchema" targetNamespace="http://zikzakjack/hrscott"
+	xmlns:tns="http://zikzakjack/hrscott" elementFormDefault="qualified">
+
+	<zzj:complexType name="region">
+		<zzj:sequence>
+			<zzj:element name="regionId" type="zzj:int"></zzj:element>
+			<zzj:element name="regionName" type="zzj:string"></zzj:element>
+		</zzj:sequence>
+	</zzj:complexType>
+
+	<zzj:element name="getRegionRequest">
+		<zzj:complexType>
+			<zzj:sequence>
+				<zzj:element name="regionId" type="zzj:int"></zzj:element>
+			</zzj:sequence>
+		</zzj:complexType>
+	</zzj:element>
+
+	<zzj:element name="getRegionResponse">
+		<zzj:complexType>
+			<zzj:sequence>
+				<zzj:element name="region" type="tns:region"></zzj:element>
+			</zzj:sequence>
+		</zzj:complexType>
+	</zzj:element>
+
+</zzj:schema>
+
