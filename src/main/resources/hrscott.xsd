@@ -2,14 +2,14 @@
 <zzj:schema xmlns:zzj="http://www.w3.org/2001/XMLSchema" targetNamespace="http://zikzakjack/hrscott"
 	xmlns:tns="http://zikzakjack/hrscott" elementFormDefault="qualified">
 
-	<zzj:complexType name="region">
+	<zzj:complexType name="regionDetails">
 		<zzj:sequence>
 			<zzj:element name="regionId" type="zzj:int"></zzj:element>
 			<zzj:element name="regionName" type="zzj:string"></zzj:element>
 		</zzj:sequence>
 	</zzj:complexType>
 
-	<zzj:element name="getRegionRequest">
+	<zzj:element name="getRegionDetailsRequest">
 		<zzj:complexType>
 			<zzj:sequence>
 				<zzj:element name="regionId" type="zzj:int"></zzj:element>
@@ -17,10 +17,10 @@
 		</zzj:complexType>
 	</zzj:element>
 
-	<zzj:element name="getRegionResponse">
+	<zzj:element name="getRegionDetailsResponse">
 		<zzj:complexType>
 			<zzj:sequence>
-				<zzj:element name="region" type="tns:region"></zzj:element>
+				<zzj:element name="region" type="tns:regionDetails"></zzj:element>
 			</zzj:sequence>
 		</zzj:complexType>
 	</zzj:element>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<getRegionDetailsResponse xmlns="http://zikzakjack/hrscott" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://zikzakjack/hrscott hrscott.xsd">
+	<regionDetails>
+		<regionId>123</regionId>
+		<regionName>Utopia</regionName>
+	</regionDetails>
+</getRegionDetailsResponse>
